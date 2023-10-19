@@ -47,9 +47,6 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-     
-
-
     </div>
   </header><!-- End Header -->
 
@@ -57,30 +54,51 @@
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
 
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-6 col-lg-8">
-          <h1><img src="assets/img/favicon.png" style="max-height: 200px;" alt=""><span>.</span></h1>
-        </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="Tllegada" placeholder="name@example.com">
+        <label for="floatingInput">λ Tasa de llegada</label>
       </div>
-
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <h3><a href="mg1.html">M/G/1</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <h3><a href="mm1.html">M/M/1</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <h3><a href="mmc.html">M/M/C</a></h3>
-          </div>
-        </div>
-
+      <div class="form-floating">
+        <input type="number" class="form-control" id="Tservicio" placeholder="Password">
+        <label for="floatingPassword">μ Tasa de servicio</label>
       </div>
+      <br>
+      
+
+
+
+      <div><button  type="button" onclick="calcularmg1()" class="btn btn-primary">CALCULAR</button></div>
+      
+      
+      
+      
+      <br>
+      <div class="form-floating mb-3">
+        <input readonly type="number" class="form-control" id="Wq" placeholder="name@example.com">
+        <label for="floatingInput">(Wq) Tiempo promedio que un cliente espera en la cola</label>
+      
+      <div class="form-floating">
+        <input  readonly type="number" class="form-control" id="Ls" placeholder="Password">
+        <label for="floatingPassword">(Ls) Número esperado de clientes en el sistema</label>
+      </div>
+      <div class="form-floating">
+        <input  readonly type="number" class="form-control" id="Ws" placeholder="Password">
+        <label for="floatingPassword">(Ws) Tiempo promedio de espera de un cliente en el sistema </label>
+      </div>
+      <div class="form-floating">
+        <input  readonly type="number" class="form-control" id="P0" placeholder="Password">
+        <label for="floatingPassword">(P0) Probabilidad de tener 0 </label>
+      </div>
+      <div class="form-floating">
+        <input  readonly type="number" class="form-control" id="Pw" placeholder="Password">
+        <label for="floatingPassword">(Pw) Probabilidad de que un cliente tenga que esperar por el servicio</label>
+      </div>
+      <div class="form-floating">
+        <input  readonly type="number" class="form-control" id="Lq" placeholder="Password">
+        <label for="floatingPassword">(Lq) Número esperado de clientes en la cola</label>
+      </div>
+    </div>
+
 
     </div>
   </section><!-- End Hero -->
